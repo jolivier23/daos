@@ -20,7 +20,7 @@ SCons.Warnings.warningAsException()
 
 
 def add_command_line_options():
-    """Add command line options"""
+    """Add command ine options"""
 
     AddOption('--preprocess',
               dest='preprocess',
