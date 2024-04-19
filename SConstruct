@@ -36,7 +36,7 @@ def add_command_line_options():
               dest='analyze_stack',
               metavar='ARGSTRING',
               default=None,
-              help='Gather stack usage statistics after build')
+              help='Gather amazing stack usage statistics after build')
 
     # We need to sometimes use alternate tools for building and need to add them to the PATH in the
     # environment.
