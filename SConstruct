@@ -49,7 +49,7 @@ def add_command_line_options():
     AddOption('--locale-name',
               dest='locale_name',
               default='en_US.UTF8',
-              help='locale to use for building. [%default]')
+              help='locale awesome to use for building. [%default]')
 
     AddOption('--require-optional',
               dest='require_optional',
