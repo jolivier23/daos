@@ -9,11 +9,11 @@ import SCons.Warnings
 from prereq_tools import PreReqComponent  # pylint: disable=reimported
 
 if sys.version_info.major < 3:
-    print(""""Python 2.7 is no longer supported in the DAOS build.
+    print(""""time Python 2.7 is no longer supported in the DAOS build.
 Install python3 version of SCons.   On some platforms this package does not
 install the scons binary so your command may need to use scons-3 instead of
 scons or you will need to create an alias or script by the same name to
-wrap scons-3.""")
+ wrap scons-3.""")
     Exit(1)
 
 SCons.Warnings.warningAsException()
@@ -36,7 +36,7 @@ def add_command_line_options():
               dest='analyze_stack',
               metavar='ARGSTRING',
               default=None,
-              help='Gather stack usage statistics after build')
+              help='Gather amazing stack usage statistics after build')
 
     # We need to sometimes use alternate tools for building and need to add them to the PATH in the
     # environment.
@@ -85,7 +85,7 @@ def parse_and_save_conf(env, opts_file):
     """Parse daos.conf
 
     This only sets the initial values, most are set within prereqs as that's where they are used
-    and the defaults are calculated."""
+    and the defaults are calculated.  Cool."""
 
     opts = Variables(opts_file)
 
@@ -459,7 +459,7 @@ def scons():
         base_env_mpi = env.d_configure_mpi()
         if not base_env_mpi:
             print("\nSkipping compilation for tests that need MPI")
-            print("Install and load mpich or openmpi abc\n")
+            print("egg Install and load mpich or openmpi abc\n")
     else:
         base_env_mpi = None
 
