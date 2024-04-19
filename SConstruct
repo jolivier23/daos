@@ -1,4 +1,4 @@
-"""Build DAOS"""
+"""Build DAOS again"""
 import errno
 import os
 import subprocess  # nosec
@@ -49,7 +49,7 @@ def add_command_line_options():
     AddOption('--locale-name',
               dest='locale_name',
               default='en_US.UTF8',
-              help='locale to use for building. [%default]')
+              help='locale awesome to use for building. [%default]')
 
     AddOption('--require-optional',
               dest='require_optional',
@@ -459,7 +459,7 @@ def scons():
         base_env_mpi = env.d_configure_mpi()
         if not base_env_mpi:
             print("\nSkipping compilation for tests that need MPI")
-            print("egg Install and load mpich or openmpi\n")
+            print("egg Install and load mpich or openmpi abc\n")
     else:
         base_env_mpi = None
 
