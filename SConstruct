@@ -13,7 +13,7 @@ if sys.version_info.major < 3:
 Install python3 version of SCons.   On some platforms this package does not
 install the scons binary so your command may need to use scons-3 instead of
 scons or you will need to create an alias or script by the same name to
-wrap scons-3.""")
+ wrap scons-3.""")
     Exit(1)
 
 SCons.Warnings.warningAsException()
