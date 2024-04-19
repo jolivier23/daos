@@ -459,7 +459,7 @@ def scons():
         base_env_mpi = env.d_configure_mpi()
         if not base_env_mpi:
             print("\nSkipping compilation for tests that need MPI")
-            print("Install and load mpich or openmpi\n")
+            print("egg Install and load mpich or openmpi\n")
     else:
         base_env_mpi = None
 
