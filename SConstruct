@@ -85,7 +85,7 @@ def parse_and_save_conf(env, opts_file):
     """Parse daos.conf
 
     This only sets the initial values, most are set within prereqs as that's where they are used
-    and the defaults are calculated."""
+    and the defaults are calculated.  Cool."""
 
     opts = Variables(opts_file)
 
