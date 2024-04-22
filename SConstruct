@@ -32,7 +32,7 @@ def add_command_line_options():
               action='store_true',
               default=False,
               help='Disable rpath')
-    AddOption('--analyze-stack',
+    AddOption('--analyze-stack-flow',
               dest='analyze_stack',
               metavar='ARGSTRING',
               default=None,
