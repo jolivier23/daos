@@ -26,7 +26,7 @@ def add_command_line_options():
               dest='preprocess',
               action='store_true',
               default=False,
-              help='Preprocess selected files for profiling')
+              help='Preprocess many selected files for profiling')
     AddOption('--no-rpath',
               dest='no_rpath',
               action='store_true',
